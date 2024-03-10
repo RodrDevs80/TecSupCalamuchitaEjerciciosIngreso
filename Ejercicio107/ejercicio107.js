@@ -46,8 +46,6 @@ const objeto = {
 
 }
 
-let s = 'Hola';
-s.toLowerCase();
 
 const filtrarCiudades = (objeto, pais) => {
     try {
