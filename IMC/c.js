@@ -15,17 +15,17 @@ function calcularImc() {
   ).toFixed(2);
 
   if (resultado < 18.5) {
-    imc = "Su IMC indica que tiene BAJO PESO";
+    imc = "Indica que tiene BAJO PESO";
   } else if (resultado > 18.5 && resultado < 24.9) {
-    imc = "Su IMC indica que tiene un PESO NORMAL";
+    imc = "Indica que tiene un PESO NORMAL";
   } else if (resultado > 24.9 && resultado < 29.9) {
-    imc = "Su IMC indica que tiene SOBREPESO";
+    imc = "Indica que tiene SOBREPESO";
   } else if (resultado > 29.9 && resultado < 34.9) {
-    imc = "Su IMC indica que tiene OBESIDAD EN GRADO I";
+    imc = "Indica que tiene OBESIDAD EN GRADO I";
   } else if (resultado > 34.9 && resultado < 39.9) {
-    imc = "Su IMC indica que tiene OBESIDAD EN GRADO II";
+    imc = "Indica que tiene OBESIDAD EN GRADO II";
   } else if (resultado > 40) {
-    imc = "Su IMC indica que tiene OBESIDAD EN GRADO III";
+    imc = "Indica que tiene OBESIDAD EN GRADO III";
   }
   resul.querySelector(
     "#resultado-h3"
