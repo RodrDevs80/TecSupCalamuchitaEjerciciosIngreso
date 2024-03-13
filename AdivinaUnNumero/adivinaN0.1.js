@@ -19,7 +19,7 @@ let contador = 0;
 let intentos = 10;
 while (contador < intentos) {
     //ingreso del numero del usuario
-    let numeroElegido = Number(prompt('Ingrese un numero: '));
+    let numeroElegido = Number(prompt('Ingrese un numero entre 1 y 100: '));
     console.log(typeof numeroElegido);
     console.log(typeof numeroSecreto);
     if (numeroElegido !== numeroSecreto) {
