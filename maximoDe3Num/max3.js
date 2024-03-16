@@ -29,6 +29,11 @@ if (num1 === num2 && num2 === num3) {
 }
 //resultado
 console.log(mayor);
+// function promedioDeNumeros(numeros) {
+//     return numeros.reduce((suma, numero) => suma + numero, 0) / numeros.length;
+// }
+// const n = [5, 5, 5, 5];
+// console.log(promedioDeNumeros(n));
 
 
 //forma 2 
