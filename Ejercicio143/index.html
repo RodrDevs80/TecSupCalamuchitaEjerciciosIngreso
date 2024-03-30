@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./ejercicio143.js"></script>
+    <title>Formulario de registro</title>
+</head>
+
+<body>
+    <div id="modal-contenedor">
+        <div class="modal">
+            <h2 id="tituloModal">SE INGRESARON DATOS NO VALIDOS!!!</h2>
+            <p id="txtModal">¡Modifique los datos incorrectos!
+                La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al
+                menos una mayúscula.
+                Puede tener otros símbolos.
+            </p>
+            <button id="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
+    <h1>Formulario de Registro</h1>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text">
+        <label for="correo-electrónico">Correo Electrónico</label>
+        <input id="correo-electrónico" type="text">
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" type="password">
+        <button id="btnEnviar">Enviar</button>
+    </form>
+</body>
+
+</html>

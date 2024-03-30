@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*#eaeaea*/
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background: #2553df;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #848484;
+}
+
+button {
+  border: none;
+  background: #2553df;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 20px;
+}
+form {
+  background: #eaeaea;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: #908888 solid;
+  padding: 50px 100px;
+  margin: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+form label {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 5px;
+}
+form input {
+  width: 158%;
+  padding: 14px 25px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  transition: hover, 1s;
+  font-size: 15px;
+}
+input:hover {
+  background-color: #c2c4cd;
+}
+input:active {
+  background-color: #fff;
+  border-bottom: 2px solid #000;
+  box-shadow: 0 0 5px #000;
+}
+#modal-contenedor {
+  z-index: -1; /*para ponerlo adelante uso 100*/
+  text-align: center;
+  display: none; /* Oculto inicialmente alternado con none y block */
+  position: fixed; /* Hace que el modal permanezca en su lugar al desplazarse */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cubre todo el puerto de visualización */
+  background-color: rgba(0, 0, 0, 0.4); /* Oscurece el fondo */
+}
+
+.modal {
+  background-color: white;
+  margin: 200px auto; /* Centra el modal */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 600px;
+}
+
+#cerrar-modal {
+  background-color: #ccc;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#txtModal,
+#tituloModal {
+  color: #000;
+}
