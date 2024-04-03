@@ -17,9 +17,9 @@ console.log(numeroSecreto);
 let contador = 0;
 //cantidad de intentos para acertar!
 let intentos = 10;
-while (contador < intentos) {
+while (contador <= intentos) {
     //ingreso del numero del usuario
-    let numeroElegido = Number(prompt('Ingrese un numero entre 1 y 100: '));
+    let numeroElegido = Number(prompt('Ingrese un numero: '));
     console.log(typeof numeroElegido);
     console.log(typeof numeroSecreto);
     if (numeroElegido !== numeroSecreto) {

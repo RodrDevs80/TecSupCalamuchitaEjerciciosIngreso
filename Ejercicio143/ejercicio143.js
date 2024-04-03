@@ -34,32 +34,33 @@ const regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@
 const regexPassword = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
 
 btnEnviar.addEventListener('click', (e) => {
+    //prevenir comportamiento por defecto 
     e.preventDefault();
     //contador para controlar los errores
-    let contador = 0;
+    let contadorDeErrores = 0;
     //validar nombre
     if (!isNaN(nombre.value) || nombre.value == '') {
         nombre.style.border = 'red solid';
-        contador++;
+        contadorDeErrores++;
     } else {
         nombre.style.border = 'none';
     }
     //validar correo
     if (!regexEmail.test(correoElectronico.value) || correoElectronico.value == '') {
         correoElectronico.style.border = 'red solid';
-        contador++;
+        contadorDeErrores++;
     } else {
         correoElectronico.style.border = 'none';
     }
     //validar contraseña
     if (!regexPassword.test(contrasena.value) || contrasena.value == '') {
         contrasena.style.border = 'red solid';
-        contador++;
+        contadorDeErrores++;
     } else {
         contrasena.style.border = 'none';
     }
     //si el contador es mayor a cero indica errores si no esta todo correcto.
-    if (contador > 0) {
+    if (contadorDeErrores > 0) {
         tituloModal.style.color = 'red';
         contenedorModal.style.display = 'block';
         contenedorModal.style.zIndex = '100';
