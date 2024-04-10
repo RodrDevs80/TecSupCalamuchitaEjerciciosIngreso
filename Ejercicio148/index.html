@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./ejercicio148.js"></script>
+    <title>Calculadora de Propina</title>
+    <link rel="shortcut icon"
+        href="https://img.freepik.com/vector-gratis/calculadora-flotante-cartoon-vector-icono-ilustracion-finanzas-negocio-icono-concepto-aislado-plano_138676-9297.jpg"
+        type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculadora de Propina</h1>
+    <main class="contenedor">
+        <form action="">
+            <div class="field"><input id="total-a-pagar" type="text" placeholder="Total a Pagar" />
+                <div class="line"></div>
+            </div>
+            <div class="field"> <input type="text" id="porcentaje" placeholder="Porcentaje de Propina" />
+                <div class="line"></div>
+            </div>
+            <div class="field"> <input type="text" id="distribucion" placeholder="Distribución de propina" />
+                <div class="line"></div>
+            </div>
+
+            <button id="calcular">Calcular</button>
+        </form>
+        <hr>
+        <h2>RESULTADO</h2>
+        <h3 id="txt-total-propina">Total de Propina</h3>
+        <h3 id="total-propina">$</h3>
+        <h3 id="txt-propina-por-mozo">Propina por mozo</h3>
+        <h3 id="propina-por-mozo">$</h3>
+    </main>
+
+</body>
+
+</html>
